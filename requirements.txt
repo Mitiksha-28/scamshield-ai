@@ -1,0 +1,8 @@
+langgraph>=0.2
+pydantic>=2.5
+groq>=0.9
+apify-client>=1.7
+requests>=2.31
+streamlit>=1.35
+python-dotenv>=1.0
+pytest>=8.0
