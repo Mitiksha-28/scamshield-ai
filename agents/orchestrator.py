@@ -72,7 +72,7 @@ def orchestrator_node(state):
     except Exception as e:
         emit(rid, "orchestrator", "orchestrator", "error", {"error": str(e)[:200]})
         decision = {"conflicts": h_conflicts, "gaps": h_gaps}
-        reqs, source = h_reqs, "rule_fallback"
+        reqs, source = (h_reqs if loops == 0 else {}), "rule_fallback"
 
     if loops >= MAX_LOOPS:
         reqs = {}
