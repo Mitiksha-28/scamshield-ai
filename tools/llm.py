@@ -7,8 +7,8 @@ from groq import Groq
 
 load_dotenv()
 
-FAST = os.getenv("FAST_MODEL", "llama-3.1-8b-instant")
-STRONG = os.getenv("STRONG_MODEL", "llama-3.3-70b-versatile")
+FAST = os.getenv("FAST_MODEL", "openai/gpt-oss-20b")
+STRONG = os.getenv("STRONG_MODEL", "openai/gpt-oss-120b")
 _client = None
 
 
